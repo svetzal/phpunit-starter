@@ -6,8 +6,8 @@ class MyClassTest extends PHPUnit_Framework_TestCase {
 
   public function setUp() {
 //    $this->gateway = new MyGateway();
-//    $this->gateway = $this->getMock('MyGatweay');
-    $this->gateway = $this->getMockBuilder('MyGateway')->getMock();
+    $this->gateway = $this->getMock('MyGateway');
+//    $this->gateway = $this->getMockBuilder('MyGateway')->getMock();
 
     $this->service = new MyService($this->gateway);
   }
